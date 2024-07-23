@@ -152,7 +152,7 @@ export default function PlayPage() {
 										<p>1/h</p>
 									</div>
 									<div className="border border-white flex p-2 px-4 gap-4 items-center rounded-lg font-bold">
-										<p className="text-lg">Top-Up RC</p>
+										<p className="text-lg">Top-Up KC</p>
 										{/* <p className="text-lg">Buy {topUpVal} SpawnChips</p> */}
 										{/* <div className="cursor-pointer bg-[#CB2742] w-[35px] h-[35px] rounded flex justify-center items-center" onClick={() => { setTopUpVal(topUpVal + 1) }}>
                                             <FaPlus />
@@ -196,7 +196,7 @@ export default function PlayPage() {
 						<div className={"flex w-4/6 mx-auto justify-evenly items-center text-xl"}>
 							<p className="border p-1 rounded w-5/6 text-center">{Number((topUpVal * 0.00005).toPrecision(2))} ETH</p>
 						</div>
-						<button className="bg-[#CB2742] w-1/2 p-2 rounded-lg" onClick={() => { (activeAccount) ? (topUpVal > 0) ? topUp() : toast.error("Buy Amount should be greater than 1 !") : toast.error("Wallet not connected!") }}>Buy RC</button>
+						<button className="bg-[#CB2742] w-1/2 p-2 rounded-lg" onClick={() => { (activeAccount) ? (topUpVal > 0) ? topUp() : toast.error("Buy Amount should be greater than 1 !") : toast.error("Wallet not connected!") }}>Buy KC</button>
 					</div>
 				</ReactModal>
 				<Toaster />
